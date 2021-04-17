@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
-import NotFound from './components/NotFound/NotFound'
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext();
 
