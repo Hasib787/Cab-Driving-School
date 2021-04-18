@@ -1,5 +1,5 @@
-#navitem{
-    margin: 20px 0 15px 0;
+#navName a:-webkit-any-link{
+        text-decoration: none;
 }
 #logo{
     font-size: 26px;
@@ -30,4 +30,7 @@
 #admin:hover{
     color: rgb(255, 157, 0);
     transition: 0.3s;
+}
+#homenav{
+    text-decoration: none;
 }
