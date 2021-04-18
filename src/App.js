@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Login from './components/Login/Login';
 
 export const UserContext = createContext();
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="*">
           <NotFound />
