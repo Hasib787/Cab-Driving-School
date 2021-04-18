@@ -12,7 +12,7 @@ import googleLogo from '../../images/google-logo.png';
 import { useContext, useState } from 'react';
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
-import { createUserWithEmailAndPassword, handleFbSignIn, handleGoogleSignIn, initializeLoginFramework, signInWithEmailAndPassword, storeAuthToken } from './LoginManager';
+import { createUserWithEmailAndPassword, handleFbSignIn, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword, storeAuthToken } from './LoginManager';
 import HeaderNav from '../HeaderNav/HeaderNav';
 
 const useStyles = makeStyles({
@@ -60,6 +60,12 @@ const Login = () => {
             })
     }
 
+    const signOut = () => {
+        handleSignOut()
+            .then(res => {
+                handleResponse(res, false);
+            })
+    }
 
     const handleResponse = (res, redirect) => {
         setUser(res);
