@@ -1,10 +1,30 @@
 .list-icon{
     position: relative;
     padding: 0 0 0 30px;
-    margin-top: 0; 
+    margin-top: 28px; 
     text-decoration: none;
 }
 .list-icon li{
     list-style: none;
+    margin-left: 21px;
 }
-
+.car-ready{
+    margin-top: 5%;
+}
+.pull-right h1{
+    font-size: 60px;
+    color: #393939;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+.pull-right p{
+    margin-top: 25px;
+    font-size: 18px;
+}
+.offset-top li{
+    margin-bottom: 5px;
+}
+#btn-order{
+    margin-top: 30px;
+}
