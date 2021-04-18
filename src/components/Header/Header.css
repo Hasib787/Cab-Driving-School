@@ -5,6 +5,15 @@
 .Slider img{
     height:550px;
 }
-.slider-caption{
-
+#slider-caption h1{
+    font-size:55px;
+}
+#slider-caption p{
+    font-size: 30px;
+}
+#slider-caption2 h1{
+    font-size:55px;
+}
+#slider-caption3 h1{
+    font-size:55px;
 }

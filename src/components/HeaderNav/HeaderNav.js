@@ -16,8 +16,8 @@ const HeaderNav = () => {
                         <Nav.Link id="programs" className="active ms-5" href="#link">Programs</Nav.Link>
                         <Nav.Link id="blog" className="active ms-5" href="#link">Blogs</Nav.Link> 
                         <Nav.Link id="testimonial" className="active ms-5" href="#link">Testimonial</Nav.Link> 
-                        <Nav.Link id="admin" className=" ms-5" href="#link">Admin</Nav.Link>  
-                        <Link to="/login"><Button className="ms-5 me-4">Login</Button></Link>
+                        <Link to="/admin"><Nav.Link id="admin" className=" ms-5" href="#admin">Admin</Nav.Link></Link>  
+                        <Link to="/login"><Button className="ms-5 me-4 text-light  btn-warning">Login</Button></Link>
                     </Nav>
                     
                 </Navbar.Collapse>

@@ -1,12 +1,9 @@
 import { Carousel } from 'react-bootstrap';
-import React, { useState } from 'react';
+import React from 'react';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import sliderimg1 from '../../images/slider/car-1.jpg';
 import sliderimg2 from '../../images/slider/car-2.jpg';
 import sliderimg3 from '../../images/slider/car-3.jpg';
-
-
-
 import './Header.css';
 
 const Header = () => {
@@ -22,9 +19,9 @@ const Header = () => {
                             src={sliderimg1}
                             alt="First slide"
                         />
-                        <Carousel.Caption ClassName="slider-caption">
-                            <h1>We Learn to <span style={{color:"orange"}}>Drive Easy</span></h1>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <Carousel.Caption id="slider-caption">
+                            <h1>We Learn to <span style={{ color: "orange" }}>Drive Easy</span></h1>
+                            <p>We can educate even a Chico</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -34,9 +31,9 @@ const Header = () => {
                             alt="Second slide"
                         />
 
-                        <Carousel.Caption ClassName="slider-caption">
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <Carousel.Caption id="slider-caption2">
+                            <h2>Smart driver start here</h2>
+                            <h1><span style={{ color: 'orange' }}>Friendly</span> & <span style={{ color: 'orange' }}>Patient</span> Instructors</h1>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -46,9 +43,9 @@ const Header = () => {
                             alt="Third slide"
                         />
 
-                        <Carousel.Caption ClassName="slider-caption"> 
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <Carousel.Caption id="slider-caption3">
+                            <h1> <span style={{ color: "orange" }}>We Learn to</span> Drive Save</h1>
+                            <h2>Come and you will love it</h2>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

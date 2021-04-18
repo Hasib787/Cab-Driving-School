@@ -1,0 +1,10 @@
+.list-icon{
+    position: relative;
+    padding: 0 0 0 30px;
+    margin-top: 0; 
+    text-decoration: none;
+}
+.list-icon li{
+    list-style: none;
+}
+

@@ -11,10 +11,23 @@
     color: rgb(255, 157, 0);
     transition: 0.3s;
 }
-#home1{
-    text-decoration: none;
-}
 #home1:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}
+#programs:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}
+#blog:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}
+#testimonial:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}
+#admin:hover{
     color: rgb(255, 157, 0);
     transition: 0.3s;
 }
