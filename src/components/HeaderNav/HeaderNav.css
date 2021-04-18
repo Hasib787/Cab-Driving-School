@@ -1,0 +1,20 @@
+#navitem{
+    margin: 20px 0 15px 0;
+}
+#logo{
+    font-size: 26px;
+}
+#logo span{
+    color: orange;
+}
+#about:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}
+#home1{
+    text-decoration: none;
+}
+#home1:hover{
+    color: rgb(255, 157, 0);
+    transition: 0.3s;
+}

@@ -8,6 +8,8 @@ import {
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import Login from './components/Login/Login';
+import Admin from './components/Admin/Admin';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -26,6 +28,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <PrivateRoute path="/admin">
+            <Admin />
+          </PrivateRoute>
           <Route path="*">
           <NotFound />
         </Route>
