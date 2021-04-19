@@ -8,7 +8,7 @@ import './Programs.css';
 const Programs = () => {
 
     return (
-        <section>
+        <section id="programs">
             <div>
                 <h1 className="tt-ourPrograms text-center">Our Programs</h1>
             </div>
