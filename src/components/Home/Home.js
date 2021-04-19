@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import whitecar from '../../images/whitecar.png';
 import Programs from '../Programs/Programs';
+import AboutUs from '../AboutUs/AboutUs';
 
 const Home = () => {
     return (
@@ -27,6 +28,7 @@ const Home = () => {
             </section>
            
                     <Programs></Programs>
+                    <AboutUs></AboutUs>
             
         </div>
     );

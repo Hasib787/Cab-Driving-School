@@ -1,0 +1,16 @@
+.carditem{
+    margin-bottom: 2%;
+}
+.carditem img{
+    margin-bottom: 10px;
+}
+.t-why-use p{
+    font-size: 18px;
+}
+.t-why-use h1{
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    padding-bottom: 20px;
+    color: #393939;
+}
