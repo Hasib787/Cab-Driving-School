@@ -7,6 +7,7 @@ import whitecar from '../../images/whitecar.png';
 import Programs from '../Programs/Programs';
 import AboutUs from '../AboutUs/AboutUs';
 import Testimonial from '../Testimonial/Testimonial';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
@@ -31,6 +32,7 @@ const Home = () => {
                     <Programs></Programs>
                     <AboutUs></AboutUs>
                     <Testimonial></Testimonial>
+                    <Footer></Footer>
         </div>
     );
 };
