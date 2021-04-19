@@ -4,6 +4,7 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import whitecar from '../../images/whitecar.png';
+import Programs from '../Programs/Programs';
 
 const Home = () => {
     return (
@@ -24,6 +25,9 @@ const Home = () => {
                         </ul>
                     </div>
             </section>
+           
+                    <Programs></Programs>
+            
         </div>
     );
 };
