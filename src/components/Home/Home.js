@@ -6,6 +6,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import whitecar from '../../images/whitecar.png';
 import Programs from '../Programs/Programs';
 import AboutUs from '../AboutUs/AboutUs';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -29,7 +30,7 @@ const Home = () => {
            
                     <Programs></Programs>
                     <AboutUs></AboutUs>
-            
+                    <Testimonial></Testimonial>
         </div>
     );
 };

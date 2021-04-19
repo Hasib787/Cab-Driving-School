@@ -1,0 +1,37 @@
+.t-testimonial{
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    color: #393939;
+}
+.testimonial{
+    background-color: rgba(235, 238, 236, 0.644);
+}
+.testimonial-carousel{
+    height: 245px;
+}
+.slider{
+    width: 75%;
+    min-height: 20rem;
+}
+.review-card{
+    border-radius: 10px;
+    background-color: transparent;
+}
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    width: 75%;
+    margin-left: 13%;
+}
+.card-body p{
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.card-title{
+    margin-bottom: .75rem
+}
