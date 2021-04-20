@@ -12,6 +12,7 @@ import Admin from './components/Admin/Admin';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import BookNow from './components/Admin/Dashboard/BookNow/BookNow';
 import ReviewDashboard from './components/Admin/Dashboard/ReviewDashboard/ReviewDashboard';
+import Orders from './components/Admin/Dashboard/Orders/Orders';
 
 export const UserContext = createContext();
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/bookNow">
             <BookNow />
+          </Route>
+          <Route path="/orders">
+            <Orders />
           </Route>
           <Route path="/review">
             <ReviewDashboard />

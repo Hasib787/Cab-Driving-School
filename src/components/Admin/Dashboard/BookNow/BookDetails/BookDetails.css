@@ -1,0 +1,8 @@
+.text-brand {
+    color: rgba(214, 141, 22, 0.952);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.ctext p{
+    font-size: 19px;
+}

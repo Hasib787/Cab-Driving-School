@@ -36,7 +36,7 @@ const DashboardHeader = () => {
                             <h5><FontAwesomeIcon icon={faPlus} /><Link to="/bookNow"> Book Now</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faThList} /><Link to="/bookingList"> Booking List</Link></h5>
+                            <h5><FontAwesomeIcon icon={faThList} /><Link to="/orders"> Booking List</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faStream} /><Link to="/review"> Review</Link></h5>
