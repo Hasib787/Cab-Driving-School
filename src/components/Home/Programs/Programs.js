@@ -2,7 +2,7 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button, Card } from 'react-bootstrap';
-import testImg from '../../images/car-blue.jpg';
+import testImg from '../../../images/car-blue.jpg';
 import './Programs.css';
 
 const Programs = () => {

@@ -1,7 +1,6 @@
-import { Card, Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import React from 'react';
 import './Testimonial.css';
-import car from '../../images/slider/car-4.jpg';
 
 
 const Testimonial = () => {

@@ -6,10 +6,10 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/Home';
-import NotFound from './components/NotFound/NotFound';
+import NotFound from './components/Shared/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Admin from './components/Admin/Admin';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 

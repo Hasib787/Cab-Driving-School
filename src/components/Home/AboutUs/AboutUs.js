@@ -1,10 +1,10 @@
 import React from 'react';
-import safety from '../../images/icons/safty.JPG';
-import people from '../../images/icons/people.JPG';
-import time from '../../images/icons/time.JPG';
-import fee from '../../images/icons/fee.JPG';
-import classF from '../../images/icons/classF.JPG';
-import payment from '../../images/icons/payment.JPG';
+import safety from '../../../images/icons/safty.JPG';
+import people from '../../../images/icons/people.JPG';
+import time from '../../../images/icons/time.JPG';
+import fee from '../../../images/icons/fee.JPG';
+import classF from '../../../images/icons/classF.JPG';
+import payment from '../../../images/icons/payment.JPG';
 import './AboutUs.css';
 
 

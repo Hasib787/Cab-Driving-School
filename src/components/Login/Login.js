@@ -13,7 +13,7 @@ import { useContext, useState } from 'react';
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
 import { createUserWithEmailAndPassword, handleFbSignIn, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword, storeAuthToken } from './LoginManager';
-import HeaderNav from '../HeaderNav/HeaderNav';
+import HeaderNav from '../Shared/HeaderNav/HeaderNav';
 
 const useStyles = makeStyles({
     root: {

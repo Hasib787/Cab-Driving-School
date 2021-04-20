@@ -8,20 +8,6 @@
     list-style: none;
     margin-left: 21px;
 }
-.car-ready{
-    margin-top: 5%;
-}
-.pull-right h1{
-    font-size: 60px;
-    color: #393939;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
-    margin: 0;
-}
-.pull-right p{
-    margin-top: 25px;
-    font-size: 18px;
-}
 .offset-top li{
     margin-bottom: 5px;
 }

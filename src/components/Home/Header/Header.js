@@ -1,9 +1,9 @@
 import { Carousel } from 'react-bootstrap';
 import React from 'react';
-import HeaderNav from '../HeaderNav/HeaderNav';
-import sliderimg1 from '../../images/slider/car-1.jpg';
-import sliderimg2 from '../../images/slider/car-2.jpg';
-import sliderimg3 from '../../images/slider/car-3.jpg';
+import HeaderNav from '../../Shared/HeaderNav/HeaderNav'
+import sliderimg1 from '../../../images/slider/car-1.jpg';
+import sliderimg2 from '../../../images/slider/car-2.jpg';
+import sliderimg3 from '../../../images/slider/car-3.jpg';
 import './Header.css';
 
 const Header = () => {
