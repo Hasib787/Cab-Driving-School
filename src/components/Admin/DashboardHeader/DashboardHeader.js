@@ -32,7 +32,7 @@ const DashboardHeader = () => {
                         <Avatar alt="Remy Sharp" src={loggedInUser.photo} />
                     </div>
                     <div className="user-panel">
-                        <a href="admin/bookNow" className="linkmx-lg-4">
+                        <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faPlus} /> Book Now</h5>
                         </a>
                         <a href="" className="linkmx-lg-4">

@@ -1,0 +1,14 @@
+.text-sub {
+    color: #3a3a3a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.text-brand {
+    color: orange;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
