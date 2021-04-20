@@ -1,5 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faThList, faStream } from '@fortawesome/free-solid-svg-icons';
 import './DashboardHeader.css';
+
 
 const DashboardHeader = () => {
     return (
@@ -11,13 +14,13 @@ const DashboardHeader = () => {
                     </div>
                     <div className="user-panel">
                         <a href="" className="linkmx-lg-4">
-                            <h5>Book Now</h5>
+                            <h5><FontAwesomeIcon icon={faPlus} />Book Now</h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5>Booking List</h5>
+                            <h5><FontAwesomeIcon icon={faThList} />Booking List</h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5>Review</h5>
+                            <h5><FontAwesomeIcon icon={faStream} />Review</h5>
                         </a>
                     </div>
                 </div>

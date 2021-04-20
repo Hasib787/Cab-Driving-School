@@ -10,3 +10,15 @@
 .sidebar h2 span{
     color: orange;
 }
+.user-panel{
+    margin-top: 20%;
+}
+.user-panel a{
+    margin-bottom: 5%;
+    color: white;
+    text-decoration: none;
+}
+.user-panel a:hover{
+    color: orange;
+    background-color: papayawhip;
+}
