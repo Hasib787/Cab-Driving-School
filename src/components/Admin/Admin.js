@@ -1,9 +1,10 @@
 import React from 'react';
+import DashboardHeader from './DashboardHeader/DashboardHeader';
 
 const Admin = () => {
     return (
         <div>
-            <h2>This is admin</h2>
+            <DashboardHeader></DashboardHeader>
         </div>
     );
 };

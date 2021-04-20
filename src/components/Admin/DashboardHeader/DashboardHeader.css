@@ -1,0 +1,12 @@
+.sidebar{
+    background-color: rgb(130 203 72 / 70%);
+    min-height: 100vh;
+}
+.sidebar h2{
+    padding-top: 10%;
+    color: white;
+    font-size: 26px;
+}
+.sidebar h2 span{
+    color: orange;
+}
