@@ -11,7 +11,7 @@
     color: orange;
 }
 .user-panel{
-    margin-top: 20%;
+    margin-top: 12%;
 }
 .user-panel a{
     margin-bottom: 5%;
@@ -21,4 +21,7 @@
 .user-panel a:hover{
     color: orange;
     background-color: papayawhip;
+}
+.user-panel a h5{
+    margin-bottom: 18px;
 }

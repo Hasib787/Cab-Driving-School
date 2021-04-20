@@ -10,6 +10,7 @@ import NotFound from './components/Shared/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Admin from './components/Admin/Admin';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import BookNow from './components/Admin/Dashboard/BookNow/BookNow';
 
 export const UserContext = createContext();
 
