@@ -5,6 +5,7 @@ import './DashboardHeader.css';
 import { UserContext } from '../../../App';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,12 +19,11 @@ const useStyles = makeStyles((theme) => ({
 
 const DashboardHeader = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    console.log(loggedInUser)
     const classes = useStyles();
 
     return (
-        <section className="row col-lg-12">
-            <div className="col-sm-12 col-md-3">
+        <section>
+            <div className="col-lg-12">
                 <div className=" d-lg-block text-left sidebar px-5 d-md-flex">
                     <div>
                         <h2>Cab <span>Driving School</span></h2>
@@ -33,21 +33,19 @@ const DashboardHeader = () => {
                     </div>
                     <div className="user-panel">
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /> Book Now</h5>
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/bookNow"> Book Now</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faThList} /> Booking List</h5>
+                            <h5><FontAwesomeIcon icon={faThList} /><Link to="/bookingList"> Booking List</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faStream} /> Review</h5>
+                            <h5><FontAwesomeIcon icon={faStream} /><Link to="/review"> Review</Link></h5>
                         </a>
                     </div>
 
                 </div>
             </div>
-            <div className="mt-3 col-lg-9">
-                <h1>Hi {loggedInUser.name} Welcome to Dashboard</h1>
-            </div>
+            
         </section>
     );
 };

@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from '../../App';
 import BookNow from './Dashboard/BookNow/BookNow';
-import Dashboard from './Dashboard/Dashboard';
 import DashboardHeader from './DashboardHeader/DashboardHeader';
 
 const Admin = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
-        <div>
-            <DashboardHeader></DashboardHeader>
-            <Dashboard></Dashboard>
-            <BookNow></BookNow>
+        <div className="row">
+            <div className="col-sm-12 col-md-3">
+                <DashboardHeader></DashboardHeader>
+            </div>
+            <div className="mt-3 col-lg-9">
+                <h1>Hi {loggedInUser.name} Welcome to Dashboard</h1>
+            </div>
         </div>
     );
 };

@@ -4,7 +4,8 @@ import './Review.css';
 
 const Review = () => {
     return (
-        <div className="col-lg-9 col-md-12 col-sm-12">
+        <section>
+        <div>
             <div className="head-text mt-5">
                 <h4 className="mb-4 mt-5 text-left text-sub rounded bg-light p-3">
                 We Care for you, <span className="text-brand">Write something for us</span>
@@ -31,6 +32,7 @@ const Review = () => {
                 </form>
             </div>
         </div>
+        </section>
     );
 };
 
