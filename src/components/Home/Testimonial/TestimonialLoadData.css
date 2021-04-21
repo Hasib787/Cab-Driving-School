@@ -1,3 +1,14 @@
+.t-testimonial{
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    color: #393939;
+}
+.testimonial{
+    background-color: rgba(235, 238, 236, 0.644);
+}
 .slider{
     width: 75%;
     min-height: 20rem;

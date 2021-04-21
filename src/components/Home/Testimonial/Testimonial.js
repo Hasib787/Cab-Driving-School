@@ -3,7 +3,8 @@ import React from 'react';
 import './Testimonial.css';
 
 
-const Testimonial = () => {
+const Testimonial = (props) => {
+    const {name, company, description} = props.review;
     return (
         <div id="testimonials" className="testimonial mt-5">
             <div className="t-testimonial text-center">
@@ -17,7 +18,7 @@ const Testimonial = () => {
                             <div className="review-card border-0 card">
                                 <div className="tbody">
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam minus debitis repellat quidem! Maxime error voluptatem fuga dicta! Magnam autem impedit commodi sed nemo</p>
-                                    <div className="card-title"><h5>Hasib</h5></div>
+                                    <div className="card-title"><h5>{name}</h5></div>
                                     <div className="mb-2 text-muted card-subtitle">
                                         <h6>Hello</h6>
                                     </div>

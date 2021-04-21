@@ -2,10 +2,10 @@ import React from 'react';
 import Header from './Header/Header';
 import './Home.css';
 import AboutUs from './AboutUs/AboutUs';
-import Testimonial from './Testimonial/Testimonial';
 import Footer from '../Shared/Footer/Footer'
 import Programs from './Programs/Programs';
 import AboutInfo from './AboutInfo/AboutInfo';
+import TestimonialLoadData from './Testimonial/TestimonialLoadData';
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             <AboutInfo></AboutInfo>
             <Programs></Programs>
             <AboutUs></AboutUs>
-            <Testimonial></Testimonial>
+            <TestimonialLoadData></TestimonialLoadData>
             <Footer></Footer>
         </div>
     );
