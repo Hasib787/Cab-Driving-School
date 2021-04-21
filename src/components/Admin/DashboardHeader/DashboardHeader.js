@@ -33,7 +33,7 @@ const DashboardHeader = () => {
                     </div>
                     <div className="user-panel">
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/bookNow"> Book Now</Link></h5>
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/admin/bookNow"> Book Now</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faThList} /><Link to="/orders"> Orders List</Link></h5>

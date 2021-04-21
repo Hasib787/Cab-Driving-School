@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../App';
+import BookDetails from './Dashboard/BookNow/BookDetails/BookDetails';
 import DashboardHeader from './DashboardHeader/DashboardHeader';
 
 const Admin = () => {
@@ -11,6 +12,7 @@ const Admin = () => {
             </div>
             <div className="mt-3 col-lg-9">
                 <h1>Hi {loggedInUser.name} Welcome to Dashboard</h1>
+                <BookDetails></BookDetails>
             </div>
         </div>
     );

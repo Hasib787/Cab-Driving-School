@@ -35,15 +35,12 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/admin">
+          <PrivateRoute path="/admin/bookNow">
             <Admin />
-          </Route>
-          <Route path="/bookNow">
-            <BookNow />
-          </Route>
-          <Route path="/orders">
+          </PrivateRoute>
+          <PrivateRoute path="/orders">
             <Orders />
-          </Route>
+          </PrivateRoute>
           <Route path="/review">
             <ReviewDashboard />
           </Route>
