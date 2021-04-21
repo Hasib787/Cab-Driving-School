@@ -1,20 +1,21 @@
 import React from 'react';
 import AdminDashboardHeader from '../AdminDashboardHeader/AdminDashboardHeader';
-import OrderListDetails from './OrderListDetails';
+import AddServiceForm from './AddServiceForm';
 
-const OrderList = () => {
+
+const AddService = () => {
     return (
         <div>
             <div className="row col-lg-12 col-sm-12">
                 <div className="col-sm-12 col-lg-3">
-                    <AdminDashboardHeader></AdminDashboardHeader>
+                    <AdminDashboardHeader />
                 </div>
                 <div className="col-sm-12 col-lg-9">
-                    <OrderListDetails></OrderListDetails>
+                    <AddServiceForm />
                 </div>
             </div>
         </div>
     );
 };
 
-export default OrderList;
+export default AddService;

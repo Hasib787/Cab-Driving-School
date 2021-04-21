@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faThList, faStream } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faHdd, faStream, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import './AdminDashboardHeader.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
@@ -35,13 +35,13 @@ const AdminDashboardHeader = () => {
                     </div>
                     <div className="admin-panel">
                          <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/orderList">Order List</Link></h5>
+                            <h5><FontAwesomeIcon icon={faHdd} /><Link to="/orderList"> Order List</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/addService">Add Service</Link></h5>
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/addService"> Add Service</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faThList} /><Link to="/makeAdmin"> Make Admin</Link></h5>
+                            <h5><FontAwesomeIcon icon={faUserPlus} /><Link to="/makeAdmin"> Make Admin</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faStream} /><Link to="/manageServices"> Manage Services</Link></h5>

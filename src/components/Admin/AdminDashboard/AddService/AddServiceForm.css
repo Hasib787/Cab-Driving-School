@@ -1,0 +1,25 @@
+.text-brand {
+    color: rgba(214, 141, 22, 0.952);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.addService{
+    background-color: white;
+    width: 72%;
+    border-radius: 10px;
+}
+.addService Form{
+    padding: 20px;
+}
+.text-label{
+    font-size: 16px;
+    font-weight: bold;
+}
+#saveButton {
+    margin: 1% 0 0 92%;
+}
+
+.text-area{
+    font-size: 16px;
+    font-weight: bold;
+}
