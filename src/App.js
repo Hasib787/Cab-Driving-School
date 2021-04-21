@@ -35,7 +35,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/admin/bookNow">
+          <PrivateRoute path="/admin/bookNow/:bookId">
             <Admin />
           </PrivateRoute>
           <PrivateRoute path="/orders">

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './HeaderNav.css';
 
 const HeaderNav = () => {
-
+    const {bookId} = useParams();
     return (
         <div id="navName" className="container">
             <Navbar id="navitem" className="text-uppercase fw-bold" expand="lg">
@@ -17,7 +17,7 @@ const HeaderNav = () => {
                         <Nav.Link id="program" className="active ms-4" href="#programs">Programs</Nav.Link>
                         <Nav.Link id="blog" className="active ms-4" href="#link">Blogs</Nav.Link>
                         <Nav.Link id="testimonial" className="active ms-4" href="#testimonials">Testimonial</Nav.Link>
-                        <Link to="/admin/bookNow"><Nav.Link id="admin" className=" ms-4" href="#admin">Admin</Nav.Link></Link>
+                        <Link to={"/admin/bookNow/"+bookId}><Nav.Link id="admin" className=" ms-4" href="#admin">Admin</Nav.Link></Link>
                         <Link to="/login"><Button className="ms-5 me-4 text-light  btn-warning">Login</Button></Link>
                     </Nav>
 

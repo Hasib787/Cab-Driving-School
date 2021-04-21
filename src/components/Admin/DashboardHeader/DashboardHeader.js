@@ -5,7 +5,7 @@ import './DashboardHeader.css';
 import { UserContext } from '../../../App';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const DashboardHeader = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const classes = useStyles();
+    const {bookId} = useParams();
 
     return (
         <section>
@@ -33,7 +34,7 @@ const DashboardHeader = () => {
                     </div>
                     <div className="user-panel">
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/admin/bookNow"> Book Now</Link></h5>
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to={"/admin/bookNow/"+bookId}> Book Now</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faThList} /><Link to="/orders"> Orders List</Link></h5>

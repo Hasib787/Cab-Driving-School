@@ -1,9 +1,33 @@
-import React from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import './BookDetails.css';
-import car from '../../../../../images/car-blue.jpg';
 import ProcessPayment from '../ProcessPayment/ProcessPayment';
+import { useParams } from 'react-router';
+import { UserContext } from '../../../../../App';
 
 const BookDetails = () => {
+    const {bookId} = useParams();
+    const [product, setProduct] = useState([]) 
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
+    useEffect(()=>{
+        fetch('http://localhost:5000/programItem/'+bookId)
+        .then(res => res.json())
+        .then(data => setProduct(data))
+    },[bookId])
+
+    const handleOrder = () => {
+        // ...selectedDate
+        const newBookings = {...loggedInUser, ...product};
+        fetch('addOrder',{
+            method:'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(newBookings)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+     }
     return (
         <div>
             <div>
@@ -14,12 +38,12 @@ const BookDetails = () => {
                 <div className="row">
                     <div className="col-md-6 d-flex justify-content-center">
                         <div className="m-3 card" style={{width: '22rem'}}>
-                            <img className="card-img-top"  src={car} alt=""/>
+                            <img className="card-img-top"  src={product.imageUrl} alt=""/>
                             <div className="card-body">
                                 <div className="card-title">
-                                    <h5>Class</h5>
+                                    <h5>{product.title}</h5>
                                 </div>
-                                <p className="ctext card-text">$</p>
+                                <p className="ctext card-text">${product.addPrice}</p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +55,7 @@ const BookDetails = () => {
                 Make Payment</h3>
                 <div>
                     
-                        <div className="payment-form w-50">
+                        <div className="payment-form w-50 mb-5">
                             <ProcessPayment></ProcessPayment>
                         </div>
                     
