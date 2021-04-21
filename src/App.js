@@ -16,6 +16,7 @@ import Orders from './components/Admin/Dashboard/Orders/Orders';
 import OrderList from './components/Admin/AdminDashboard/OrderList/OrderList';
 import AddService from './components/Admin/AdminDashboard/AddService/AddService';
 import MakeAdmin from './components/Admin/AdminDashboard/MakeAdmin/MakeAdmin';
+import ManageService from './components/Admin/AdminDashboard/ManageService/ManageService';
 
 export const UserContext = createContext();
 
@@ -56,7 +57,7 @@ function App() {
             <MakeAdmin />
           </Route>
           <Route path="/manageServices">
-            
+            <ManageService />
           </Route>
           <Route path="*">
           <NotFound />
