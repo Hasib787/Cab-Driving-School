@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../App';
-import BookNow from './Dashboard/BookNow/BookNow';
 import DashboardHeader from './DashboardHeader/DashboardHeader';
 
 const Admin = () => {

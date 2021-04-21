@@ -13,6 +13,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import BookNow from './components/Admin/Dashboard/BookNow/BookNow';
 import ReviewDashboard from './components/Admin/Dashboard/ReviewDashboard/ReviewDashboard';
 import Orders from './components/Admin/Dashboard/Orders/Orders';
+import AdminDashboardHeader from './components/Admin/AdminDashboard/AdminDashboardHeader/AdminDashboardHeader';
 
 export const UserContext = createContext();
 
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/review">
             <ReviewDashboard />
+          </Route>
+          <Route path="/orderList">
+            <AdminDashboardHeader />
           </Route>
           <Route path="*">
           <NotFound />

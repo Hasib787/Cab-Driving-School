@@ -1,0 +1,27 @@
+.Leftsidebar{
+    background-color: rgb(28 45 52 / 70%);;
+    min-height: 100vh;
+}
+.Leftsidebar h2{
+    padding-top: 10%;
+    color: white;
+    font-size: 26px;
+}
+.Leftsidebar h2 span{
+    color: orange;
+}
+.admin-panel{
+    margin-top: 12%;
+}
+.admin-panel a{
+    margin-bottom: 5%;
+    color: white;
+    text-decoration: none;
+}
+.admin-panel a:hover{
+    color: orange;
+    background-color: papayawhip;
+}
+.admin-panel a h5{
+    margin-bottom: 18px;
+}
