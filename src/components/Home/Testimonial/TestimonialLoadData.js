@@ -1,7 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import Loader from '../../Loader/Loader';
-import Testimonial from './Testimonial';
 import './TestimonialLoadData.css';
 
 const TestimonialLoadData = () => {
@@ -29,11 +28,11 @@ const TestimonialLoadData = () => {
             <div className="testimonial-carousel">
                 <div className="d-flex justify-content-center text-center review-holder">
                     <div className="d-flex justify-content-center text-center carousel slide">
+                    <Carousel>
                     {
                 loading ? <Loader /> :
                     reviews.map(review =>
-                        <Carousel key={review._id}>
-                            <Carousel.Item>
+                            <Carousel.Item key={review._id}>
                                 <div className="review-card border-0 card">
                                     <div className="tbody">
                                         <p>{review.description}</p>
@@ -44,8 +43,9 @@ const TestimonialLoadData = () => {
                                     </div>
                                 </div>
                             </Carousel.Item>
-                        </Carousel>)
+                        )       
             }
+            </Carousel>
                     </div>
                 </div>
             </div>
