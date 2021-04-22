@@ -18,7 +18,7 @@ const BookDetails = () => {
     const handleOrder = () => {
         // ...selectedDate
         const newBookings = {...loggedInUser, ...product};
-        fetch('addOrder',{
+        fetch('http://localhost:5000/addOrder',{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newBookings)
@@ -56,7 +56,7 @@ const BookDetails = () => {
                 <div>
                     
                         <div className="payment-form w-50 mb-5">
-                            <ProcessPayment></ProcessPayment>
+                            <ProcessPayment handleOrder={handleOrder}></ProcessPayment>
                         </div>
                     
                 </div>

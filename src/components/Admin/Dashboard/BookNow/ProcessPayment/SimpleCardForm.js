@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
-const SimpleCardForm = () => {
+const SimpleCardForm = (props) => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -11,7 +11,6 @@ const SimpleCardForm = () => {
     const handleSubmit = async (event) => {
         // Block native form submission.
         event.preventDefault();
-
         if (!stripe || !elements) {
             // Stripe.js has not loaded yet. Make sure to disable
             // form submission until Stripe.js has loaded.
@@ -29,6 +28,7 @@ const SimpleCardForm = () => {
             card: cardElement,
         });
 
+        console.log(paymentMethod)
         if (error) {
             setPaymentError(error.message);
             setPaymentSuccess(null);
@@ -37,13 +37,12 @@ const SimpleCardForm = () => {
             setPaymentError(null);
         }
     };
-
     return (
         <div>
             <form onSubmit={handleSubmit}>
                 <CardElement />
                 <br/>
-                <button className="btn btn-success" type="submit" disabled={!stripe}>
+                <button className="btn btn-success" onClick={()=>props.handleOrder} type="submit" disabled={!stripe}>
                     Pay Now
                 </button>
             </form>
