@@ -6,7 +6,7 @@ const ManageServiceDetails = (props) => {
     const {_id, title, price} = props;
     const handleDeleteItem = id => {
         console.log('delete clicked', _id)
-        fetch(`http://localhost:5000/deleteService/${id}`, {
+        fetch(`https://stormy-forest-84945.herokuapp.com/deleteService/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

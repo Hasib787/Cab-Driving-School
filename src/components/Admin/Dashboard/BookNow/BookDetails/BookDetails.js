@@ -10,7 +10,7 @@ const BookDetails = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/programItem/'+bookId)
+        fetch('https://stormy-forest-84945.herokuapp.com/programItem/'+bookId)
         .then(res => res.json())
         .then(data => setProduct(data))
     },[bookId])

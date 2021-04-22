@@ -12,7 +12,7 @@ const MakeAdminForm = () => {
         const eventData = {
             email: data.email,
         }
-        const url = `http://localhost:5000/addAdmin`;
+        const url = `https://stormy-forest-84945.herokuapp.com/addAdmin`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },

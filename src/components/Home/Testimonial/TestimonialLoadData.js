@@ -8,7 +8,7 @@ const TestimonialLoadData = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const url = `http://localhost:5000/reviews`;
+        const url = `https://stormy-forest-84945.herokuapp.com/reviews`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

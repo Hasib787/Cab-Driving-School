@@ -13,7 +13,7 @@ const Review = () => {
             company: data.company,
             description: data.description  
         }
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://stormy-forest-84945.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },

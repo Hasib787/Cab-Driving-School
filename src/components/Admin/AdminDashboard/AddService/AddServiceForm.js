@@ -16,7 +16,7 @@ const AddServiceForm = () => {
             addPrice: data.addPrice,
             imageUrl: imageUrl
         }
-        const url = `http://localhost:5000/addPrograms`;
+        const url = `https://stormy-forest-84945.herokuapp.com/addPrograms`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },

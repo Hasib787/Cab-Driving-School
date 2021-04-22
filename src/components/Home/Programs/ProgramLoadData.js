@@ -11,7 +11,7 @@ const ProgramLoadData = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/programs')
+        fetch('https://stormy-forest-84945.herokuapp.com/programs')
             .then(res => res.json())
             .then(data => {
                 setPrograms(data)
@@ -23,7 +23,7 @@ const ProgramLoadData = () => {
         const savedCart = getDatabaseCart();
         const productIds = Object.keys(savedCart);
 
-        fetch('http://localhost:5000/bookitemByIds', {
+        fetch('https://stormy-forest-84945.herokuapp.com/bookitemByIds', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
