@@ -18,7 +18,7 @@ const BookDetails = () => {
     const handleOrder = () => {
         // ...selectedDate
         const newBookings = {...loggedInUser, ...product};
-        fetch('http://localhost:5000/addOrder',{
+        fetch('https://stormy-forest-84945.herokuapp.com/addOrder',{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newBookings)
@@ -48,6 +48,9 @@ const BookDetails = () => {
                         </div>
                     </div>
                 </div>
+            </div>  
+            <div>
+                <button class="btn btn-success" onClick={handleOrder}>Place Order</button>
             </div>
 
             <div className="payment-info">
@@ -56,7 +59,7 @@ const BookDetails = () => {
                 <div>
                     
                         <div className="payment-form w-50 mb-5">
-                            <ProcessPayment handleOrder={handleOrder}></ProcessPayment>
+                            <ProcessPayment ></ProcessPayment>
                         </div>
                     
                 </div>
