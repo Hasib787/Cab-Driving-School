@@ -12,7 +12,7 @@ const MakeAdminForm = () => {
         const eventData = {
             email: data.email,
         }
-        const url = `http://localhost:5000/makeAdmin`;
+        const url = `https://stormy-forest-84945.herokuapp.com/makeAdmin`;
         fetch(url, {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
@@ -27,7 +27,7 @@ const MakeAdminForm = () => {
                     Make Admin</h3>
             </div>
             <div>
-                <Form onSubmit={handleSubmit(onSubmit)}>
+                <Form className="m-3" onSubmit={handleSubmit(onSubmit)}>
                     <Form.Row>
                         <Form.Group as={Col} controlId="text">
                             <Form.Label className="text-label" >Make Admin</Form.Label>
