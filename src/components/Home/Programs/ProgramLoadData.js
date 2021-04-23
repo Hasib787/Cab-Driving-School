@@ -23,7 +23,7 @@ const ProgramLoadData = () => {
         const savedCart = getDatabaseCart();
         const productIds = Object.keys(savedCart);
 
-        fetch('https://stormy-forest-84945.herokuapp.com/bookitemByIds', {
+        fetch('https://stormy-forest-84945.herokuapp.com/programItemByIds', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ const ProgramLoadData = () => {
                
            { loading ? <Loader />
                         : programs.map(program => <Programs
-                            key={program._id}
+                            _id={program._id}
                             showAddToCart={true}
                             handleAddProduct={handleAddProduct}
                             program={program}
