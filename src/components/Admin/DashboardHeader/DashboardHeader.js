@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faThList, faStream } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faThList, faStream, faHdd, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import './DashboardHeader.css';
 import { UserContext } from '../../../App';
 import { makeStyles } from '@material-ui/core/styles';
@@ -41,6 +41,19 @@ const DashboardHeader = () => {
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faStream} /><Link to="/review"> Review</Link></h5>
+                        </a>
+                        
+                        <a href="" className="linkmx-lg-4">
+                            <h5><FontAwesomeIcon icon={faHdd} /><Link to="/orderList"> All Order List</Link></h5>
+                        </a>
+                        <a href="" className="linkmx-lg-4">
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/addService"> Add Service</Link></h5>
+                        </a>
+                        <a href="" className="linkmx-lg-4">
+                            <h5><FontAwesomeIcon icon={faUserPlus} /><Link to="/makeAdmin"> Make Admin</Link></h5>
+                        </a>
+                        <a href="" className="linkmx-lg-4">
+                            <h5><FontAwesomeIcon icon={faStream} /><Link to="/manageServices"> Manage Services</Link></h5>
                         </a>
                     </div>
 

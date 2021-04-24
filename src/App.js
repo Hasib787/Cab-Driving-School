@@ -44,18 +44,18 @@ function App() {
           <Route path="/review">
             <ReviewDashboard />
           </Route>
-          <Route path="/orderList">
+          <PrivateRoute path="/orderList">
             <OrderList />
-          </Route>
-          <Route path="/addService">
+          </PrivateRoute>
+          <PrivateRoute path="/addService">
             <AddService />
-          </Route>
-          <Route path="/makeAdmin">
+          </PrivateRoute>
+          <PrivateRoute path="/makeAdmin">
             <MakeAdmin />
-          </Route>
-          <Route path="/manageServices">
+          </PrivateRoute>
+          <PrivateRoute path="/manageServices">
             <ManageService />
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/checkout">
               <Checkout />
           </PrivateRoute>
