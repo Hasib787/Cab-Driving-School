@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faThList, faStream, faHdd, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import './DashboardHeader.css';
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         '& > *': {
             margin: theme.spacing(1),
-            marginLeft:'38%'
+            marginLeft: '38%'
         },
     },
 }));
@@ -20,7 +20,19 @@ const useStyles = makeStyles((theme) => ({
 const DashboardHeader = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const classes = useStyles();
-    const {bookId} = useParams();
+    const { bookId } = useParams();
+
+    const [isAdmin, setIsAdmin] = useState(false);
+
+    useEffect(() => {
+        fetch('https://stormy-forest-84945.herokuapp.com/isAdmin', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email: loggedInUser.email })
+        })
+            .then(res => res.json())
+            .then(data => setIsAdmin(data));
+    }, [])
 
     return (
         <section>
@@ -34,7 +46,7 @@ const DashboardHeader = () => {
                     </div>
                     <div className="user-panel">
                         <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to={"/admin/bookNow/"+bookId}> Book Now</Link></h5>
+                            <h5><FontAwesomeIcon icon={faPlus} /><Link to={"/admin/bookNow/" + bookId}> Book Now</Link></h5>
                         </a>
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faThList} /><Link to="/orders"> Orders List</Link></h5>
@@ -42,24 +54,26 @@ const DashboardHeader = () => {
                         <a href="" className="linkmx-lg-4">
                             <h5><FontAwesomeIcon icon={faStream} /><Link to="/review"> Review</Link></h5>
                         </a>
-                        
-                        <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faHdd} /><Link to="/orderList"> All Order List</Link></h5>
-                        </a>
-                        <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faPlus} /><Link to="/addService"> Add Service</Link></h5>
-                        </a>
-                        <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faUserPlus} /><Link to="/makeAdmin"> Make Admin</Link></h5>
-                        </a>
-                        <a href="" className="linkmx-lg-4">
-                            <h5><FontAwesomeIcon icon={faStream} /><Link to="/manageServices"> Manage Services</Link></h5>
-                        </a>
+
+                        {isAdmin && <div>
+                            <a href="" className="linkmx-lg-4">
+                                <h5><FontAwesomeIcon icon={faHdd} /><Link to="/orderList"> All Order List</Link></h5>
+                            </a>
+                            <a href="" className="linkmx-lg-4">
+                                <h5><FontAwesomeIcon icon={faPlus} /><Link to="/addService"> Add Service</Link></h5>
+                            </a>
+                            <a href="" className="linkmx-lg-4">
+                                <h5><FontAwesomeIcon icon={faUserPlus} /><Link to="/makeAdmin"> Make Admin</Link></h5>
+                            </a>
+                            <a href="" className="linkmx-lg-4">
+                                <h5><FontAwesomeIcon icon={faStream} /><Link to="/manageServices"> Manage Services</Link></h5>
+                            </a>
+                        </div>}
                     </div>
 
                 </div>
             </div>
-            
+
         </section>
     );
 };
