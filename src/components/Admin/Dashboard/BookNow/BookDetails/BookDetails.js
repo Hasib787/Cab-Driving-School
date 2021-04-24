@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import './BookDetails.css';
-import ProcessPayment from '../ProcessPayment/ProcessPayment';
 import { useParams } from 'react-router';
 import { UserContext } from '../../../../../App';
+import { Link } from 'react-router-dom';
 
 const BookDetails = () => {
     const {bookId} = useParams();
@@ -50,19 +50,7 @@ const BookDetails = () => {
                 </div>
             </div>  
             <div>
-                <button class="btn btn-success" onClick={handleOrder}>Place Order</button>
-            </div>
-
-            <div className="payment-info">
-                <h3 className="mb-4 mt-5 text-left text-brand rounded bg-light p-3">
-                Make Payment</h3>
-                <div>
-                    
-                        <div className="payment-form w-50 mb-5">
-                            <ProcessPayment ></ProcessPayment>
-                        </div>
-                    
-                </div>
+            <Link to={"/checkout"}><button class="btn btn-success  m-5" onClick={handleOrder}>CheckOut</button></Link>
             </div>
 
         </div>

@@ -10,13 +10,13 @@ import NotFound from './components/Shared/NotFound/NotFound';
 import Login from './components/Login/Login';
 import Admin from './components/Admin/Admin';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
-import BookNow from './components/Admin/Dashboard/BookNow/BookNow';
 import ReviewDashboard from './components/Admin/Dashboard/ReviewDashboard/ReviewDashboard';
 import Orders from './components/Admin/Dashboard/Orders/Orders';
 import OrderList from './components/Admin/AdminDashboard/OrderList/OrderList';
 import AddService from './components/Admin/AdminDashboard/AddService/AddService';
 import MakeAdmin from './components/Admin/AdminDashboard/MakeAdmin/MakeAdmin';
 import ManageService from './components/Admin/AdminDashboard/ManageService/ManageService';
+import Checkout from './components/Admin/Dashboard/Checkout/Checkout';
 
 export const UserContext = createContext();
 
@@ -56,6 +56,9 @@ function App() {
           <Route path="/manageServices">
             <ManageService />
           </Route>
+          <PrivateRoute path="/checkout">
+              <Checkout />
+          </PrivateRoute>
           <Route path="*">
           <NotFound />
         </Route>

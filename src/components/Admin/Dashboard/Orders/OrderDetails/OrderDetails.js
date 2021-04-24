@@ -20,12 +20,11 @@ const OrderDetails = () => {
     }, [])
     return (
         <div>
-            
             <div>
                 <h3 className="mb-4 mt-5 text-left text-brand rounded bg-light p-3">
                     Orders</h3>
             </div>
-            <div className="row text-center manage-list-top mt-5 mx-0">
+            <div className="row text-center rounded bg-light p-3 manage-list-top mt-5 mx-0">
                 <div className="col-2"><strong>Name</strong></div>
                 <div className="col-2"><strong>Email</strong></div>
                 <div className="col-2"><strong>Package Name</strong></div>

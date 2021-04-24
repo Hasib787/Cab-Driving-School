@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import { Link } from 'react-router-dom';
 
-const SimpleCardForm = (props) => {
+const SimpleCardForm = () => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -42,9 +43,9 @@ const SimpleCardForm = (props) => {
             <form onSubmit={handleSubmit}>
                 <CardElement />
                 <br/>
-                <button className="btn btn-success" onClick={()=>props.handleOrder} type="submit" disabled={!stripe}>
+                <Link to={"/orders"}><button className="btn btn-success" type="submit" disabled={!stripe}>
                     Pay Now
-                </button>
+                </button></Link>
             </form>
             {
                 paymentError && <p style={{ color:'red'}}>{paymentError}</p>
